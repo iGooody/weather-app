@@ -1,10 +1,19 @@
+import React from 'react'
+import './App.css'
+import { Button } from './components/Button/Button';
+import Cities from './components/Cities/Cities';
+import { CityInput } from './components/CityInput/CityInput';
+import { cities } from './components/constants/Constants';
+import { StyledHeader } from './components/Header';
 
-import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <h1> Weather app</h1>
+      <StyledHeader>Weather App</StyledHeader>
+      <Cities></Cities>
+      <CityInput></CityInput>
     </div>
   );
 }
