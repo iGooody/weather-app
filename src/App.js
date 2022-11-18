@@ -1,20 +1,23 @@
 import React from 'react'
-import './App.css'
-import { Button } from './components/Button/Button';
 import Cities from './components/Cities/Cities';
 import { CityInput } from './components/CityInput/CityInput';
-import { cities } from './components/constants/Constants';
 import { StyledHeader } from './components/Header';
+import TimeAndLocation from './components/TimeAndLocation/TimeAndLocation';
+import { ThemeProvider } from 'styled-components'
+import { lightTheme } from './theme'
+import TemperatureAndDetails from './components/TemperatureAndDetails/TemperatureAndDetails';
 
 
 function App() {
 
   return (
-    <div className="App">
+    <ThemeProvider theme={lightTheme}>
       <StyledHeader>Weather App</StyledHeader>
       <Cities></Cities>
       <CityInput></CityInput>
-    </div>
+      <TimeAndLocation></TimeAndLocation>
+      <TemperatureAndDetails/>
+    </ThemeProvider >
   );
 }
 

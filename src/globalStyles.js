@@ -4,11 +4,12 @@ export default createGlobalStyle`
   body {
     display: flex;
     justify-content: center;
-    background-color: #EBF1FF;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
-    font-family: Roboto, sans-serif;
+    font-family: Poppins, sans-serif;
     position: relative;
     overflow-x: hidden;
   }

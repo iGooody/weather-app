@@ -1,18 +1,17 @@
 import React from 'react'
-import { Button } from '../Button/Button'
+import {BsSearch} from 'react-icons/bs'
+import {MdPlace} from 'react-icons/md'
 import styled from 'styled-components'
 
 export const Card = styled.div`
     width: 100%;
-    background: #e7e7fa;
+   
 `
 export const CardHeader = styled.div`
-    padding: 20px;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 30px;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: ${({ theme }) => theme.fontSizes[2]}px;;
 `
 export const CardBody = styled.div`
     padding: 20px;
@@ -29,20 +28,35 @@ export const CardHeaderInput = styled.input`
     ::placeholder {
     color: gray;
     }
-    width: 300px;
-    height: 40px;
+    width: 400px;
+    height: 50px;
     text-indent: 20px;
     border-color: white;
     border: none;
     margin-right: 20px;
     background: white;
+    border-radius: 50px;
 `
+
+export const Icon = styled.div `
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+ `
 
 export const CityInput = () => {
   return (
     <Card>
       <CardHeader>
-        <CardHeaderInput type='text' placeholder="Search..."/>
+        <CardHeaderInput type='text' placeholder="Search..." >
+        </CardHeaderInput>
+        <Icon >
+          <BsSearch color='white' size={40}   />
+        </Icon>
+        <Icon>
+          <MdPlace color='white' size={50}/>
+        </Icon> 
       </CardHeader>
     </Card>
   );
