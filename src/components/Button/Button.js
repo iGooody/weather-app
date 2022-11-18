@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-  background-color: gainsboro;
+  outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
   margin: 10px;
   height: 52px;
   width: 146px;
@@ -9,5 +11,5 @@ export const Button = styled.button`
   border-radius: 40px;
   font-style: normal;
   font-weight: bold;
-  color: green;
+  color: whitesmoke;
 `

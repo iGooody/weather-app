@@ -20,4 +20,3 @@ export const cities = [
         title: 'Sydney',
     }
 ];
-export const size = 40;

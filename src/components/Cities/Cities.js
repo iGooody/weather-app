@@ -6,7 +6,8 @@ const List = styled.div `
 display: flex;
 flex-direction: row;
 justify-content: center;
-background-color: bisque;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 
 `
 
@@ -16,7 +17,11 @@ export default function Cities() {
     <List>
          {cities.map((city, id) => (
         
-        <Button key={id}>{city.title}</Button>
+        <Button 
+          key={id} 
+          onClick={() => {
+            console.log(city.id);
+        }}>{city.title}</Button>
      ))}
     </List>
   )

@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   body {
+    display: flex;
+    justify-content: center;
     background-color: #EBF1FF;
     min-width: 100vw;
     min-height: 100vh;
@@ -22,12 +24,7 @@ export default createGlobalStyle`
       text-decoration: underline;
     }
   }
-  input {
-    &:focus-visible {
-      outline: none;
-      border: black 1px solid;
-    }
-  }
+  input:focus {outline: none;}
   p {
     margin: 0;
   }
