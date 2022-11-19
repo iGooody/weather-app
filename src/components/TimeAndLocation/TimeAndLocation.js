@@ -10,8 +10,6 @@ export  const TimeCard = styled.div `
 export  const LocationCard = styled.div `
     display: flex ;
     justify-content: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
 `
 export const Text = styled.p `
  justify-content: center;
@@ -20,7 +18,7 @@ export const Text = styled.p `
  font: extralight;
  font-size: ${({ theme }) => theme.fontSizes[3]}px;
  line-height: 28px;
- margin-bottom: 30px;
+ margin-bottom: 20px;
 `
 export const TimeText = styled(Text)`
     font-size: ${({ theme }) => theme.fontSizes[2]}px;

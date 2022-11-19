@@ -1,8 +1,9 @@
 import React from 'react'
-import { Card } from '../CityInput'
+import { Card, Icon } from '../CityInput'
 import { Text } from '../TimeAndLocation/TimeAndLocation'
 import styled from 'styled-components'
 import { List } from '../Cities' 
+import {TbTemperature} from 'react-icons/tb'
 
 export const Image = styled.img`
     size: 120px;
@@ -11,7 +12,7 @@ export const Image = styled.img`
 `;
 export const DescriptionText = styled(Text)`
     
-    margin-top: 20px;
+    margin-top: 30px;
     padding-bottom: 20px;
     font-size: ${({ theme }) => theme.fontSizes[3]}px;
     font-family: Poppins;
@@ -24,7 +25,6 @@ export const TempText = styled(Text)`
     display: flex ;
     flex-direction: row;
     align-items: center;
-    margin-left: 300px;
     font-size: ${({ theme }) => theme.fontSizes[4]}px;
 `
 
@@ -39,6 +39,13 @@ export default function TemperatureAndDetails() {
         <List>
             <Image src={'https://openweathermap.org/img/wn/01d@2x.png'}></Image>
             <TempText>34 °C</TempText>
+            <TempText>
+                <Icon>
+                    <TbTemperature color='white' size={50}/>
+                </Icon>
+                <TempText>Real felt: 36 °C</TempText>
+            </TempText>
+            
         </List>
     </>
     
