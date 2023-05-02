@@ -4,8 +4,7 @@ const Header = (): JSX.Element => (
       Weather <span className="font-black">Forecast</span>
     </h1>
     <p className="text-sm mt-2">
-      Введите название города в котором
-      вы хотите узнать погоду и выберите его из списка
+    Please enter the name of the city where you want to know the weather
     </p>
   </>
 )
